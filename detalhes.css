@@ -1,0 +1,39 @@
+main{
+    margin: 100px;
+}
+
+#products{
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+#detalhes-produto{
+    margin-right: 100px;
+}
+
+#grupo-titulo{
+    color: black; 
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#carrinho{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    #products{
+        display: block;
+        box-shadow: none;
+    }
+
+    .img img{
+        width: 100px;
+        height: 100px;
+    }
+}

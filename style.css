@@ -1,0 +1,92 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 20px;
+  }
+  
+  main {
+    background-color: white;
+  }
+  
+  .navbar {
+    background-color: gray;
+  }
+  
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    grid-gap: 20px;
+    background-color: white;
+  }
+  
+  .imagens {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner {
+    grid-column: 3;
+    grid-row: 2 / 5;
+  }
+  
+  .footer {
+    background-color: gray;
+    margin-top: auto;
+    padding-top: 50px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+  
+    margin-top: 10px;
+  }
+  
+  .social_icon {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social_icon li {
+    margin: 0 5px;
+  }
+  
+  .social_icon li a {
+    display: inline;
+    color: #000;
+    /* cor dos ícones */
+  }
+  
+  .nav-item li a {
+    display: inline;
+    justify-content: space-between;
+  }
+  
+  #form-filtro + #form-pesquisa{
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width:600px) {
+  
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      ;
+    }
+  
+    .card {
+      display: block;
+    }
+  
+    .banner {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
